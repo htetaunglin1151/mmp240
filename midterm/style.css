@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    margin: 0%;
+    margin: 0;
 }
 
 body {
     color: white;
     background: black;
-    font-family: inter
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    line-height: normal;
 }
 
 /*Hero banner styling */
@@ -17,7 +19,7 @@ body {
     display: flex;
     align-items: flex-start;
     background:
-        linear-gradient(90deg, #339199 51%, rgba(51, 145, 153, 0.00) 100%),
+        linear-gradient(90deg, #339199 51%, rgba(51, 145, 153, 0) 100%),
         url('images/Shogun.jpg') no-repeat right top;
 }
 
@@ -29,12 +31,8 @@ body {
 }
 
 .hero-banner p {
-    color: #FFF;
-    font-family: Inter;
     font-size: 1.25rem;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-bottom: 1.5rem;
 }
 
@@ -69,28 +67,20 @@ a {
     padding: 0.75rem 1rem;
     border-radius: 0.3125rem;
     border: 2px solid #ffffff;
-    color: #ffffff;
     display: inline-flex;
-    /* Makes the button a flex container */
     align-items: center;
     text-decoration: none;
-    /* Removes underline */
     font-size: 0.75rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     transition: background-color 0.3s;
-    /* Adds a smooth transition for hover effects */
-    cursor: pointer;
-    /* Shows a pointer cursor on hover */
     gap: 0.5rem;
 }
 
 .btn:hover {
+    border: none;
     background: #1CE783;
     color: #094A2A;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn svg {
@@ -103,16 +93,12 @@ a {
     padding: 2.5rem 3.63rem;
     align-items: flex-start;
     gap: 2.5rem;
-    background: #1D5459
+    background: #1D5459;
 }
 
 .Starring p {
-    color: #FFF;
-    font-family: Inter;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
 
@@ -132,9 +118,7 @@ nav li {
     margin-right: 2.5rem;
     text-align: center;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
 nav a {
@@ -167,9 +151,7 @@ nav a:hover {
 
 .content p {
     font-size: 1rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 
 }
 
@@ -202,11 +184,8 @@ h2 {
     margin-bottom: 2.5rem;
     margin-left: 3.63rem;
     color: #FFF;
-    font-family: Inter;
     font-size: 2rem;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
 }
 
 .card h4 {
@@ -219,4 +198,7 @@ h2 {
     font-size: 0.95em;
 }
 
-@media (max-width: 846px) {}
+footer{
+    text-align: center;
+    margin-bottom: 3rem;
+}
