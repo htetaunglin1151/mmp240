@@ -1,0 +1,16 @@
+#topMenu ul{
+    display: flex;
+}
+
+#topMenu li{
+    margin-right: 1em;
+}
+
+.programNav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.programNav ul li{
+    
+}
