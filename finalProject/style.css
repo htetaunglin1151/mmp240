@@ -2,10 +2,13 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Archivo', sans-serif;
+    margin: 1em;
 
 }
 
@@ -21,6 +24,15 @@ a {
     text-decoration: none;
 }
 
+a:link,
+a:visited {
+    color: black;
+    /* or any desired color */
+    text-decoration: none;
+    /* Removes underline, if needed */
+}
+
+
 
 #wrapper {
     max-width: 1200px;
@@ -34,19 +46,21 @@ header {
     justify-content: space-between;
     /* Push the items to opposite ends */
     align-items: center;
+    margin-bottom: 2em;
 }
 
 /*----------Nav----------*/
 #topMenu {
-    display: block;
+    display: none;
     border: solid 1px black;
-    padding: 5px;
+    padding: 1em;
     position: absolute;
-    right:0;
-    top:50px;
+    right: 0;
+    top: 50px;
     background-color: #DFDFDF;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 
 
@@ -57,7 +71,9 @@ header {
 }
 
 #topMenu ul li {
-    margin-right: 20px;
+
+    padding-bottom: 1em;
+
 }
 
 #topMenu ul li a {
@@ -75,11 +91,10 @@ header {
 
 .hero-banner {
     width: 100%;
-    height: 12.6875rem;
-    display: flex;
-    align-items: flex-start;
+    padding: 2em 4em;
     background:
-        url('images/queenscollege.jpg') no-repeat right top;
+        url('images/queenscollege.jpg') no-repeat right top /cover;
+    margin-bottom: 1em;
 }
 
 .hero-content {
@@ -103,10 +118,67 @@ main {
     margin-bottom: 2rem;
 }
 
+.news, .events {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.news h2 {
+    margin-bottom: 20px;
+    
+    color: #333;
+}
+
+.news h4 {
+    margin: 30px 0px 0px;
+    /* Top margin: 30px, Bottom margin: 10px */
+    
+    color: #555;
+}
+
+.news p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.news a {
+    display: inline-block;
+    
+    /* Top margin: 10px, Bottom margin: 20px */
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news a:hover {
+    text-decoration: underline;
+}
+
+.events h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.events p {
+    
+    color: #666;
+}
+
+.events a {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 
 .events img {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 /*----------Search Programs----------*/
@@ -116,6 +188,17 @@ main {
     margin-bottom: 2rem;
     padding: 20px;
     color: white;
+
+}
+
+.searchPrograms h2 {
+    margin-bottom: 1em;
+
+}
+
+.searchPrograms p {
+    margin-bottom: 1em;
+
 }
 
 .programNav ul {
@@ -210,7 +293,7 @@ main {
 }
 
 footer {
-    clear: both;
+    text-align: center;
 
 }
 
@@ -232,7 +315,7 @@ footer {
         padding: 0;
         background-color: transparent;
         box-shadow: none;
-      
+
 
     }
 
@@ -241,14 +324,15 @@ footer {
         list-style: none;
     }
 
-    #topMenu li {
-        margin-left: 1rem;
+    #topMenu ul li {
+        margin-right: 30px;
     }
 
     .programCards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 266px);
-        gap: 20px;
+        grid-template-columns: repeat(auto-fill, 270px);
+        gap: 10px;
+        justify-content: space-between;
 
     }
 
@@ -259,8 +343,6 @@ footer {
         height: 100%;
         display: flex;
         align-items: flex-start;
-        background:
-            url('images/queenscollege.jpg') no-repeat;
     }
 
     .hero-content {
@@ -287,12 +369,12 @@ footer {
 
     }
 
-    .programNav a {
-        display: flex;
-    }
-
     .Dropdown a {
         white-space: nowrap;
+    }
+
+    .programNav .Dropdown li {
+        width: 100%;
     }
 
 
@@ -310,7 +392,7 @@ footer {
 
     main .layout {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2fr 1fr;
         column-gap: 1em;
     }
 
