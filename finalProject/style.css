@@ -9,6 +9,10 @@ body {
 
 }
 
+.material-symbols-outlined {
+    float: right;
+}
+
 ul {
     list-style: none;
 }
@@ -34,15 +38,21 @@ header {
 
 /*----------Nav----------*/
 #topMenu {
-    display: none;
+    display: block;
+    border: solid 1px black;
+    padding: 5px;
+    position: absolute;
+    right:0;
+    top:50px;
+    background-color: #DFDFDF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 
-
 #topMenu ul {
-    display: flex;
     list-style: none;
+
 
 }
 
@@ -50,7 +60,7 @@ header {
     margin-right: 20px;
 }
 
-#topMenu ul a {
+#topMenu ul li a {
     text-decoration: none;
 }
 
@@ -99,12 +109,73 @@ main {
     width: 100%;
 }
 
+/*----------Search Programs----------*/
+.searchPrograms {
+    background-color: #0033a1;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 20px;
+    color: white;
+}
+
+.programNav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.programNav li {
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+.programNav a {
+    display: block;
+    padding: 1em;
+    background-color: #DFDFDF;
+    color: black;
+    border-radius: 10px;
+}
+
+
+
+
+.Dropdown {
+    display: none;
+
+}
+
+.Dropdown li {
+    width: 100%;
+    margin: 0;
+
+}
+
+.Dropdown a {
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+
+.programNav li:hover .Dropdown {
+    display: block;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 
 
 
 
 
+
+
+
+
+
+/*----------Program Cards----------*/
 .card img {
     width: 100%;
 }
@@ -121,6 +192,7 @@ main {
     display: block;
     border: solid 1px black;
     border-radius: 10px;
+    margin-bottom: 25px;
 }
 
 .programCards a:hover {
@@ -145,6 +217,7 @@ footer {
 @media (min-width: 768px) {
     #wrapper {
         width: 75%;
+        margin: 0 auto;
     }
 
     .menu {
@@ -155,6 +228,12 @@ footer {
         display: flex;
         align-items: center;
         position: static;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+      
+
     }
 
     #topMenu ul {
@@ -168,7 +247,7 @@ footer {
 
     .programCards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 265px);
+        grid-template-columns: repeat(auto-fill, 266px);
         gap: 20px;
 
     }
@@ -199,18 +278,34 @@ footer {
     .programNav ul {
         display: flex;
         justify-content: space-between;
-        
+
     }
 
     .programNav ul li {
         width: 30%;
-        padding: 10px;
-        background-color: blue;
+        position: relative;
+
     }
+
+    .programNav a {
+        display: flex;
+    }
+
+    .Dropdown a {
+        white-space: nowrap;
+    }
+
+
 
     .programNav .Dropdown {
         display: none;
         position: absolute;
+        width: 100%;
+    }
+
+    .Dropdown a:hover {
+        display: block;
+        background-color: aqua;
     }
 
     main .layout {
