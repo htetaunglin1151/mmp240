@@ -118,14 +118,14 @@ header {
         linear-gradient(0deg, #0033a1 1%, rgba(51, 145, 153, 0) 50%),
         url('images/queens.jpg') no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
     margin-bottom: 1em;
 }
 
 .hero-content {
-    margin-left: 20px;
-    margin-top: 250px;
-    max-width: 30em;
+    padding: 25px;
+    margin-top: 200px;
+    
 }
 
 .hero-content a {
@@ -134,6 +134,7 @@ header {
 
 .btn {
     padding: 10px 20px;
+    font-weight: 700;
     background-color: #e71939;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -145,7 +146,7 @@ header {
 
 .hero-banner p {
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5rem;
@@ -398,7 +399,14 @@ footer {
 
 
     .hero-content {
-        max-width: 30em;
+        margin-left: 50px;
+        padding: 0;
+        max-width: 500px;
+        margin-top: 250px;
+    }
+
+    .hero-banner p {
+        font-size: 1.5rem;
     }
 
     /*----------Program Navigation----------*/
