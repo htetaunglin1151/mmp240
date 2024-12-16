@@ -50,6 +50,10 @@ header {
 }
 
 /*----------Nav----------*/
+.logo {
+    width: 100px;
+}
+
 #topMenu {
     display: none;
     border: solid 1px black;
@@ -115,7 +119,7 @@ header {
     height: 400px;
     border-radius: 10px;
     background:
-        linear-gradient(0deg, #0033a1 1%, rgba(51, 145, 153, 0) 50%),
+        linear-gradient(0deg, #0033a1 3%, rgba(51, 145, 153, 0) 60%),
         url('images/queens.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
@@ -124,7 +128,7 @@ header {
 
 .hero-content {
     padding: 25px;
-    margin-top: 175px;
+    margin-top: 200px;
     
 }
 
@@ -357,6 +361,10 @@ footer {
     #wrapper {
         width: 75%;
         margin: 0 auto;
+    }
+
+    .logo {
+        width: 150px;
     }
 
     .menu {
