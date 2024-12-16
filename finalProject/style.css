@@ -115,7 +115,7 @@ header {
     height: 400px;
     border-radius: 10px;
     background:
-        linear-gradient(0deg, #0033a1 20%, rgba(51, 145, 153, 0) 70%),
+        linear-gradient(0deg, #0033a1 1%, rgba(51, 145, 153, 0) 50%),
         url('images/queens.jpg') no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -393,10 +393,6 @@ footer {
     /*----------Hero Banner----------*/
 
     .hero-banner {
-        background:
-            linear-gradient(0deg, #0033a1 20%, rgba(51, 145, 153, 0) 70%),
-            url('images/queens.jpg') no-repeat;
-        background-size: cover;
         background-position: 100% 70%;
     }
 
