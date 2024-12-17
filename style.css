@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
+
 body {
     font-family: "Outfit", sans-serif;
     line-height: 1.6;
@@ -19,7 +18,7 @@ body {
 
 }
 
-/* Headings */
+
 h1 {
     color: #2c3e50;
     text-align: center;
@@ -36,35 +35,32 @@ h3 {
     padding-bottom: 5px;
 }
 
-/* Paragraphs */
+
 p {
     margin: 10px 0;
     font-size: 1.1rem;
 }
 
-/* Links */
+
 a {
     text-decoration: none;
     color: #2980b9;
     font-weight: normal;
 }
 
-/* Profile Image */
+
 img {
     
     width: 100%;
     border-radius: 20px;
 }
 
-/* Lists */
+
 ul {
     list-style: none;
-    /* Remove bullets */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* 5 columns */
     gap: 10px;
-    /* Spacing between grid items */
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -85,7 +81,6 @@ ul li {
 
 ul li:hover {
     transform: translateY(-5px);
-    /* Slight lift on hover */
     background-color: #2980b9;
 }
 
@@ -99,29 +94,4 @@ ul li:hover a {
     grid-template-columns: 2fr 2fr;
     column-gap: 2em;
 
-}
-
-
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-        font-size: 1rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    img {
-        width: 200px;
-        height: 200px;
-    }
 }
