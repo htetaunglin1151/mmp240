@@ -51,7 +51,7 @@ header {
 
 /*----------Nav----------*/
 .logo {
-    width: 300px;
+    width: 150px;
 }
 
 #topMenu {
@@ -319,28 +319,43 @@ main {
 
 
 /*----------Program Cards----------*/
-.card img {
-    width: 100%;
+.category h2 {
+    margin-bottom: 1em;
+
 }
+
+.tab1, .tab2 {
+    padding: 5px 10px;
+    background-color: #5577c0;
+    color: white;
+    border-radius: 3px;
+    font-size: 12px;
+
+}
+
 
 .card h2,
-.card h3,
 .card p {
     text-decoration: none;
-    color: #000;
+    color: #333;
+    margin-bottom: 0.5em;
 }
 
+
+
 .programCards a {
+    background-color: #f9f9f9;
+    border: solid 1px #ddd;
     text-decoration: none;
     display: block;
-    border: solid 1px black;
     border-radius: 10px;
     margin-bottom: 25px;
+    transition: background-color 0.3s;
 }
 
 .programCards a:hover {
-    background-color: beige;
-    border-radius: 10px;
+    background-color: #ccd6ec;
+    
 }
 
 .cardBody {
@@ -393,7 +408,7 @@ footer {
 
     .programCards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 270px);
+        grid-template-columns: repeat(auto-fill, 360px);
         gap: 10px;
         justify-content: space-between;
 
